@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect Cloud</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <h2 id="text">Heaven</h2>
+        <div class="clouds">
+            <img src="assets/cloud1.png" style="--i:1;">
+            <img src="assets/cloud2.png" style="--i:2;">
+            <img src="assets/cloud3.png" style="--i:3;">
+            <img src="assets/cloud4.png" style="--i:4;">
+            <img src="assets/cloud5.png" style="--i:5;">
+            <img src="assets/cloud1.png" style="--i:10;">
+            <img src="assets/cloud2.png" style="--i:9;">
+            <img src="assets/cloud3.png" style="--i:8;">
+            <img src="assets/cloud4.png" style="--i:7;">
+            <img src="assets/cloud5.png" style="--i:6;">
+        </div>
+    </div>
+    <section>
+        <h2>Parallax Effect Cloud</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facere doloribus numquam ex eos praesentium esse quam vitae nulla laborum! Tempore quibusdam exercitationem consequatur iure maxime. Recusandae et provident vitae.
+        Voluptates enim officia ut nesciunt est. Fugiat repellendus esse reiciendis voluptate placeat id quasi consequatur voluptatibus tempora sed soluta at sunt corrupti, quas, dolores voluptas quos inventore. Voluptas, excepturi nostrum!
+        Recusandae consequatur voluptatum inventore repudiandae velit quos laboriosam ullam. Tempore sed, officia doloremque dolor commodi mollitia nemo adipisci ipsum labore quaerat eaque at quis voluptatem omnis quidem error dolorem est?
+        Rerum consequatur earum vel. Quaerat voluptatibus, odio accusantium delectus quo suscipit molestiae consequatur perspiciatis, fugit minus deserunt ipsam qui ducimus, ullam recusandae sapiente corporis! Aliquam dolores explicabo modi fugit quibusdam!</p>
+    </section>
+    <script>
+        let text=document.getElementById('text');
+        window.addEventListener('scroll',function(){
+            let value=window.scrollY;
+            text.style.marginBottom=value*2+'px';
+        })
+    </script>
+</body>
+</html>
